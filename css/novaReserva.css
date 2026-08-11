@@ -1,0 +1,101 @@
+body {
+    margin: 0%;
+    background-color: #F5F7FB;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    height: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.mais {
+    color: #2563EB;
+}
+
+.links {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    gap: 30px;
+}
+
+.ativo {
+    color: #1D4ED8;
+    font-weight: 600;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fotoPerfil {
+    background-color: #eaf1ff;
+    color: #1D4ED8;
+    width: 45px;
+    height: 45px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.nomePerfil {
+    font-size: 15px;
+    margin: 0%;
+}
+
+.cargoPerfil {
+    font-size: 12px;
+    margin: 0%;
+    color: #667085;
+    font-weight: 300;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.titNovaReserva {
+    padding-left: 350px;
+    padding-right: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.titNovaReserva h1 {
+    margin: 0%;
+    font-size: 30px;
+}
+
+.titNovaReserva h2 {
+    margin: 0%;
+    color: #667085;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cardNovaReserva {
+    background-color: #FFFFFF;
+    border: 1px solid #E8EBF0;
+    border-radius: 12px;
+}
