@@ -45,9 +45,27 @@
                     <h2>Selecione a sala ou laboratório que deseja utilizar.</h2>
                 </div>
                 <div class="areaCardsEspacos">
+                    <div class="cardEspacoAtivado">
+                        <h1>Laboratório de Informática 01</h1>
+                        <h2>35 lugares • Bloco A</h2>
+                        <h3>● Disponível</h3>
+                    </div>
+
                     <div class="cardEspaco">
                         <h1>Laboratório de Informática 01</h1>
-                        <h2>35 lugares • Bloco A/h2>
+                        <h2>35 lugares • Bloco A</h2>
+                        <h3>● Disponível</h3>
+                    </div>
+
+                    <div class="cardEspaco">
+                        <h1>Laboratório de Informática 01</h1>
+                        <h2>35 lugares • Bloco A</h2>
+                        <h3>● Disponível</h3>
+                    </div>
+
+                    <div class="cardEspaco">
+                        <h1>Laboratório de Informática 01</h1>
+                        <h2>35 lugares • Bloco A</h2>
                         <h3>● Disponível</h3>
                     </div>
                 </div>
@@ -60,7 +78,7 @@
                     <h1>2. Escolha a data</h1>
                     <h2>Selecione o dia em que deseja utilizar o espaço.</h2>
                 </div>
-                <div>
+                <div class="inputData">
                     <h1>Data</h1>
                     <input type="date">
                 </div>
@@ -73,8 +91,33 @@
                     <h1>3. Horários disponíveis</h1>
                     <h2>Escolha um dos horários disponíveis para o espaço selecionado.</h2>
                 </div>
-                <div>
-                    <div>
+                <div class="areaCardsHorariosDisponiveis">
+                    <div class="cardHorariosDisponiveis">
+                        <h1>08:00 — 09:00</h1>
+                        <h2>Disponível</h2>
+                    </div>
+
+                    <div class="cardHorariosOcupados">
+                        <h1>08:00 — 09:00</h1>
+                        <h2>Ocupado</h2>
+                    </div>
+
+                    <div class="cardHorariosDisponiveis">
+                        <h1>08:00 — 09:00</h1>
+                        <h2>Disponível</h2>
+                    </div>
+
+                    <div class="cardHorariosDisponiveis">
+                        <h1>08:00 — 09:00</h1>
+                        <h2>Disponível</h2>
+                    </div>
+
+                    <div class="cardHorariosOcupados">
+                        <h1>08:00 — 09:00</h1>
+                        <h2>Ocupado</h2>
+                    </div>
+
+                    <div class="cardHorariosDisponiveis">
                         <h1>08:00 — 09:00</h1>
                         <h2>Disponível</h2>
                     </div>
@@ -88,7 +131,7 @@
                     <h1>4. Escolha a turma</h1>
                     <h2>Informe qual turma utilizará o espaço.</h2>
                 </div>
-                <div>
+                <div class="selectTurma">
                     <h1>Turma</h1>
                     <select>
                         <option>Red</option>
@@ -107,7 +150,7 @@
                     <h1>5. Finalidade</h1>
                     <h2>Explique brevemente para qual atividade o espaço será utilizado.</h2>
                 </div>
-                <div>
+                <div class="textareaFinalidade">
                     <h1>Finalidade da reserva</h1>
                     <textarea></textarea>
                 </div>
@@ -115,34 +158,34 @@
 
             <hr>
 
-            <div>
-                <h1>Resumo da reserva</h1>
-                <div>
-                    <div>
+            <div class="cardResumoConversa">
+                <h1 class="titResumo">Resumo da reserva</h1>
+                <div class="infosResumo">
+                    <div class="info">
                         <h1>Espaço</h1>
                         <h2>Laboratório de Informática 01</h2>
                     </div>
 
-                    <div>
+                    <div class="info">
                         <h1>Data</h1>
                         <h2>04/07/2026</h2>
                     </div>
 
-                    <div>
+                    <div class="info">
                         <h1>Horário</h1>
                         <h2>08:00 — 09:00</h2>
                     </div>
 
-                    <div>
+                    <div class="info">
                         <h1>Turma</h1>
                         <h2>Não selecionada</h2>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <button>Cancelar</button>
-                <button>Confirmar reserva</button>
+            <div class="btnFinais">
+                <button class="btnCanclear">Cancelar</button>
+                <button class="btnConfirmar">Confirmar reserva</button>
             </div>
 
 
