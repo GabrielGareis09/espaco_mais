@@ -98,4 +98,355 @@ main {
     background-color: #FFFFFF;
     border: 1px solid #E8EBF0;
     border-radius: 12px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 30px 30px;
+}
+
+.titEscolherEspaco {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titEscolherEspaco h1 {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.titEscolherEspaco h2 {
+    font-size: 12px;
+    margin: 0%;
+    font-weight: 300;
+    color: #667085;
+}
+
+.areaCardsEspacos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cardEspacoAtivado {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #f1f5fc;
+    border: 1px solid #2563EB;
+    border-radius: 10px;
+    padding: 12px 0px 12px 12px;
+    width: 48%;
+}
+
+.cardEspacoAtivado h1 {
+    margin: 0%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cardEspacoAtivado h2 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.cardEspacoAtivado h3 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #07923c;
+}
+
+.cardEspaco {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    border-radius: 10px;
+    padding: 12px 0px 12px 12px;
+    width: 48%;
+}
+
+.cardEspaco h1 {
+    margin: 0%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cardEspaco h2 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.cardEspaco h3 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #07923c;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.titEscolherData {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titEscolherData h1 {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.titEscolherData h2 {
+    font-size: 12px;
+    margin: 0%;
+    font-weight: 300;
+    color: #667085;
+}
+
+.inputData {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.inputData h1 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.inputData input {
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    padding: 12px 10px 12px 10px;
+    width: 25%;
+    border-radius: 8px;
+}
+
+.titHorariosDisponiveis {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titHorariosDisponiveis h1 {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.titHorariosDisponiveis h2 {
+    font-size: 12px;
+    margin: 0%;
+    font-weight: 300;
+    color: #667085;
+}
+
+.areaCardsHorariosDisponiveis {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cardHorariosDisponiveis {
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+    width: 15%;
+}
+
+.cardHorariosDisponiveis h1 {
+    margin: 0%;
+    font-size: 12px;
+}
+
+.cardHorariosDisponiveis h2 {
+    margin: 0%;
+    font-size: 10px;
+    font-weight: 300;
+    color: #07923c;
+}
+
+.cardHorariosOcupados {
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+    width: 15%;
+}
+
+.cardHorariosOcupados h1 {
+    margin: 0%;
+    font-size: 12px;
+}
+
+.cardHorariosOcupados h2 {
+    margin: 0%;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.titEscolherTurma {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titEscolherTurma h1 {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.titEscolherTurma h2 {
+    font-size: 12px;
+    margin: 0%;
+    font-weight: 300;
+    color: #667085;
+}
+
+.selectTurma {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.selectTurma h1 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.selectTurma select {
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    padding: 12px 10px 12px 10px;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.Finalidade {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Finalidade h1 {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.Finalidade h2 {
+    font-size: 12px;
+    margin: 0%;
+    font-weight: 300;
+    color: #667085;
+}
+
+.textareaFinalidade {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.textareaFinalidade h1 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.textareaFinalidade textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    padding: 12px 10px 12px 10px;
+    width: 98%;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.cardResumoConversa {
+    background-color: #f1f5fc;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.titResumo {
+    font-size: 12px;
+    margin: 0%;
+}
+
+.infosResumo {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info h1 {
+    margin: 0%;
+    font-size: 11px;
+    font-weight: 400;
+    color: #667085;
+}
+
+.info h2 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.btnFinais {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    gap: 12px;
+}
+
+.btnCanclear {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+}
+
+.btnConfirmar {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #2563EB;
+    border: none;
+    color: #FFFFFF;
 }

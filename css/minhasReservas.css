@@ -1,0 +1,328 @@
+body {
+    margin: 0%;
+    background-color: #F5F7FB;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    height: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.mais {
+    color: #2563EB;
+}
+
+.links {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    gap: 30px;
+}
+
+.ativo {
+    color: #1D4ED8;
+    font-weight: 600;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fotoPerfil {
+    background-color: #eaf1ff;
+    color: #1D4ED8;
+    width: 45px;
+    height: 45px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.nomePerfil {
+    font-size: 15px;
+    margin: 0%;
+}
+
+.cargoPerfil {
+    font-size: 12px;
+    margin: 0%;
+    color: #667085;
+    font-weight: 300;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.boasVindas {
+    padding-left: 350px;
+    padding-right: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txtBoasVindas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.txtBoasVindas h1 {
+    margin: 0%;
+    font-size: 30px;
+}
+
+.txtBoasVindas h2 {
+    margin: 0%;
+    color: #667085;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.boasVindas button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 12px;
+}
+
+.cardsPrincipais {
+    padding-left: 350px;
+    padding-right: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.miniCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #E8EBF0;
+    border-radius: 12px;
+    padding: 18px 0px 18px 25px;
+    width: 353px;
+}
+
+.miniCard h1 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #667085;
+    margin: 0%;
+}
+
+.miniCard h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0%;
+}
+
+.miniCard h3 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #667085;
+    margin: 0%;
+}
+
+.cardHistorico {
+    background-color: #FFFFFF;
+    border: 1px solid #E8EBF0;
+    margin-left: 350px;
+    margin-right: 350px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.titCardHistorico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 12px 20px;
+}
+
+.titCardHistorico h1 {
+    margin: 0%;
+    font-size: 15px;
+}
+
+.titCardHistorico h2 {
+    margin: 0%;
+    font-size: 12px;
+    color: #667085;
+    font-weight: 400;
+}
+
+.filtrosHistorico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 20px 15px 20px;
+}
+
+.filtrosHistorico input {
+    border-radius: 10px;
+    border: 1px solid #c7c7c7;
+    padding: 10px 10px;
+    width: 20%;
+}
+
+.filtrosHistorico select {
+    border-radius: 10px;
+    border: 1px solid #c7c7c7;
+    padding: 10px 10px;
+    width: 8%;
+}
+
+.tabelaHistorico {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabelaHistorico table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabelaHistorico th {
+    background-color: #FAFBFC;
+    color: #8A94A6;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 20px;
+    border-top: 1px solid #E8EBF0;
+    border-bottom: 1px solid #E8EBF0;
+}
+
+.tabelaHistorico td {
+    padding: 17px 20px;
+    border-bottom: 1px solid #EEF0F4;
+    color: #344054;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.tabelaHistorico tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabelaHistorico tbody tr:hover {
+    background-color: #FAFCFF;
+}
+
+
+/* ESPAÇO */
+
+.espacoHistorico {
+    color: #172033;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.codigoHistorico {
+    color: #98A2B3;
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+
+/* DATA E HORÁRIO */
+
+.dataHistorico {
+    color: #344054;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.horarioHistorico {
+    color: #8A94A6;
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+
+/* TURMA */
+
+.turmaHistorico {
+    display: inline-block;
+    background-color: #F2F4F7;
+    color: #667085;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+
+/* STATUS */
+
+.statusHistorico {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #ECFDF3;
+    color: #15803D;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 6px 9px;
+    border-radius: 20px;
+}
+
+.bolinhaStatus {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #16A34A;
+}
+
+
+/* AÇÕES */
+
+.acoesHistorico {
+    display: flex;
+    gap: 7px;
+}
+
+.acoesHistorico button {
+    background-color: #FFFFFF;
+    border: 1px solid #DFE3E9;
+    color: #667085;
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.acoesHistorico button:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+}
+
+.acoesHistorico .botaoCancelar:hover {
+    border-color: #FCA5A5;
+    color: #DC2626;
+    background-color: #FFF8F8;
+}
