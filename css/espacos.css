@@ -16,6 +16,7 @@ body {
 
 .logo {
     display: flex;
+    user-select: none;
 }
 
 .logo h1 {
@@ -34,6 +35,22 @@ body {
     gap: 30px;
 }
 
+.links a {
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.links a:hover {
+    transform: translateY(-3px);
+}
+
+.desativado {
+    color: black;
+}
+
 .ativo {
     color: #1D4ED8;
     font-weight: 600;
@@ -43,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    user-select: none;
 }
 
 .fotoPerfil {
@@ -105,6 +123,14 @@ main {
     border: none;
     padding: 13px 20px;
     border-radius: 12px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boasVindas button:hover {
+    transform: scale(1.05);
 }
 
 .cardsPrincipais {
@@ -163,14 +189,14 @@ main {
     border-radius: 10px;
     border: 1px solid #c7c7c7;
     padding: 10px 10px;
-    width: 20%;
+    width: 25%;
 }
 
 .filtrosEspacos select {
     border-radius: 10px;
     border: 1px solid #c7c7c7;
     padding: 10px 10px;
-    width: 8%;
+    width: 13%;
 }
 
 .cardEspacos {
@@ -214,7 +240,7 @@ main {
 .tabelaEspacos th {
     background-color: #FAFBFC;
     color: #8A94A6;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     text-align: left;
     padding: 14px 20px;
@@ -226,16 +252,8 @@ main {
     padding: 17px 20px;
     border-bottom: 1px solid #EEF0F4;
     color: #344054;
-    font-size: 11px;
+    font-size: 12px;
     vertical-align: middle;
-}
-
-.tabelaEspacos tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.tabelaEspacos tbody tr:hover {
-    background-color: #FAFCFF;
 }
 
 
@@ -243,13 +261,13 @@ main {
 
 .nomeEspaco {
     color: #172033;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
 }
 
-.codigoEspaco {
+.blocoEspaco {
     color: #98A2B3;
-    font-size: 9px;
+    font-size: 10px;
     margin-top: 4px;
 }
 
@@ -260,7 +278,7 @@ main {
     display: inline-block;
     background-color: #F2F4F7;
     color: #667085;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 600;
     padding: 5px 8px;
     border-radius: 5px;
@@ -275,7 +293,7 @@ main {
     gap: 6px;
     background-color: #ECFDF3;
     color: #15803D;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 600;
     padding: 6px 9px;
     border-radius: 20px;
@@ -311,8 +329,7 @@ main {
     color: #667085;
     border-radius: 6px;
     padding: 7px 10px;
-    font-family: 'Inter', sans-serif;
-    font-size: 9px;
+    font-size: 10px;
     cursor: pointer;
 }
 

@@ -16,6 +16,7 @@ body {
 
 .logo {
     display: flex;
+    user-select: none;
 }
 
 .logo h1 {
@@ -34,6 +35,22 @@ body {
     gap: 30px;
 }
 
+.links a {
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.links a:hover {
+    transform: translateY(-3px);
+}
+
+.desativado {
+    color: black;
+}
+
 .ativo {
     color: #1D4ED8;
     font-weight: 600;
@@ -43,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    user-select: none;
 }
 
 .fotoPerfil {
@@ -105,6 +123,14 @@ main {
     border: none;
     padding: 13px 20px;
     border-radius: 12px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boasVindas button:hover {
+    transform: scale(1.05);
 }
 
 .filtrosCalendario {
@@ -132,7 +158,7 @@ main {
     border-radius: 10px;
     border: 1px solid #c7c7c7;
     padding: 10px 10px;
-    width: 8%;
+    width: 15%;
 }
 
 .calendario {
@@ -180,6 +206,12 @@ main {
     padding: 8px 12px;
     border-radius: 10px;
     font-size: 12px;
+    cursor: pointer;
+}
+
+.setasMes button:hover {
+    border-color: #2563EB;
+    color: #2563EB;
 }
 
 /* ==============================
@@ -232,13 +264,7 @@ main {
     background-color: #FFFFFF;
 }
 
-.diaCalendario:nth-child(7n) {
-    border-right: none;
-}
 
-.diaCalendario:hover {
-    background-color: #FAFCFF;
-}
 
 
 /* ==============================

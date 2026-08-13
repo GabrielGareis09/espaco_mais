@@ -16,6 +16,7 @@ body {
 
 .logo {
     display: flex;
+    user-select: none;
 }
 
 .logo h1 {
@@ -34,6 +35,22 @@ body {
     gap: 30px;
 }
 
+.links a {
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.links a:hover {
+    transform: translateY(-3px);
+}
+
+.desativado {
+    color: black;
+}
+
 .ativo {
     color: #1D4ED8;
     font-weight: 600;
@@ -43,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    user-select: none;
 }
 
 .fotoPerfil {
@@ -141,6 +159,7 @@ main {
     border-radius: 10px;
     padding: 12px 0px 12px 12px;
     width: 48%;
+    cursor: pointer;
 }
 
 .cardEspacoAtivado h1 {
@@ -172,6 +191,7 @@ main {
     border-radius: 10px;
     padding: 12px 0px 12px 12px;
     width: 48%;
+    cursor: pointer;
 }
 
 .cardEspaco h1 {
@@ -191,7 +211,46 @@ main {
     margin: 0%;
     font-size: 12px;
     font-weight: 500;
+}
+
+.cardEspacoManutenção {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #dadde2;
+    border-radius: 10px;
+    padding: 12px 0px 12px 12px;
+    width: 48%;
+    opacity: 0.4; 
+    cursor: not-allowed;
+}
+
+.cardEspacoManutenção h1 {
+    margin: 0%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cardEspacoManutenção h2 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.cardEspacoManutenção h3 {
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.disponivel {
     color: #07923c;
+}
+
+.manutençao {
+    color: rgb(190, 60, 60);
 }
 
 hr {
@@ -236,6 +295,7 @@ hr {
     padding: 12px 10px 12px 10px;
     width: 25%;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .titHorariosDisponiveis {
@@ -276,6 +336,7 @@ hr {
     align-items: center;
     padding: 20px 80px;
     width: 15%;
+    cursor: pointer;
 }
 
 .cardHorariosDisponiveis h1 {
@@ -301,6 +362,8 @@ hr {
     align-items: center;
     padding: 20px 80px;
     width: 15%;
+    opacity: 0.4; 
+    cursor: not-allowed;
 }
 
 .cardHorariosOcupados h1 {
@@ -351,6 +414,7 @@ hr {
     padding: 12px 10px 12px 10px;
     width: 30%;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .Finalidade {
@@ -441,6 +505,13 @@ hr {
     border-radius: 8px;
     background-color: #FFFFFF;
     border: 1px solid #dadde2;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnCanclear:hover {
+    transform: translateY(-3px);
 }
 
 .btnConfirmar {
@@ -449,4 +520,11 @@ hr {
     background-color: #2563EB;
     border: none;
     color: #FFFFFF;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnConfirmar:hover {
+    transform: translateY(-3px);
 }

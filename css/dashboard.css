@@ -16,6 +16,7 @@ body {
 
 .logo {
     display: flex;
+    user-select: none;
 }
 
 .logo h1 {
@@ -34,6 +35,22 @@ body {
     gap: 30px;
 }
 
+.links a {
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.links a:hover {
+    transform: translateY(-3px);
+}
+
+.desativado {
+    color: black;
+}
+
 .ativo {
     color: #1D4ED8;
     font-weight: 600;
@@ -43,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    user-select: none;
 }
 
 .fotoPerfil {
@@ -99,6 +117,14 @@ main {
     border: none;
     padding: 13px 20px;
     border-radius: 12px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boasVindas button:hover {
+    transform: scale(1.05);
 }
 
 .cardsPrincipais {
@@ -176,6 +202,13 @@ main {
     font-weight: 500;
     color: #1D4ED8;
     margin: 0%;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.headerCardEsquerda a:hover {
+    transform: translateY(-2px);
 }
 
 .cardCardEsquerda {
@@ -189,6 +222,7 @@ main {
     margin-right: 25px;
     margin-top: 15px;
     padding: 20px 0px 20px 20px;
+    user-select: none;
 }
 
 .cardCardEsquerda h2 {
@@ -254,6 +288,14 @@ main {
     font-weight: 500;
     color: #1D4ED8;
     margin: 0%;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.headerCardDireita a:hover {
+    transform: translateY(-2px);
 }
 
 .areaCardsDireita {
@@ -272,6 +314,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px 15px 20px;
+    user-select: none;
 }
 
 .direitaMiniCardDireita h1 {
