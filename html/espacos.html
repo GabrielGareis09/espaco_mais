@@ -17,10 +17,10 @@
         </div>
 
         <div class="links">
-            <a class="ativo">Dashboard</a>
-            <a>Reservas</a>
-            <a>Espaços</a>
-            <a>Calendário</a>
+            <a href="../html/dashboard.html" class="desativado">Dashboard</a>
+            <a href="../html/minhasReservas.html" class="desativado" >Reservas</a>
+            <a href="../html/espacos.html" class="ativo">Espaços</a>
+            <a href="../html/calendario.html" class="desativado">Calendário</a>
         </div>
 
         <div class="perfil">
@@ -39,7 +39,7 @@
                 <h2>Consulte as salas e laboratórios cadastrados.</h2>
             </div>
             <div>
-                <button>+ Nova Reserva</button>
+                <a href="../html/novaReserva.html"><button>+ Nova Reserva</button></a>
             </div>
         </div>
 
@@ -64,16 +64,17 @@
         </div>
 
         <div class="filtrosEspacos">
-            <input type="text" placeholder="aaaa">
+            <input type="text" placeholder="Buscar espaço...">
             <select>
-                <option>a</option>
-                <option>a</option>
-                <option>a</option>
+                <option>Todos os tipos</option>
+                <option>Informática</option>
+                <option>Laboratório</option>
+                <option>Auditório</option>
             </select>
             <select>
-                <option>a</option>
-                <option>a</option>
-                <option>a</option>
+                <option>Todos os status</option>
+                <option>Disponível</option>
+                <option>Manutenção</option>
             </select>
         </div>
 
@@ -107,22 +108,22 @@
 
                     <td>
                         <div class="nomeEspaco">
-                            Laboratório de Informática 01
+                            Informática 01
                         </div>
 
-                        <div class="codigoEspaco">
-                            LAB-001
+                        <div class="blocoEspaco">
+                             Bloco cinza
                         </div>
                     </td>
 
                     <td>
                         <span class="tipoEspaco">
-                            Laboratório
+                            Informática
                         </span>
                     </td>
 
                     <td>
-                        Bloco A • 1º andar
+                        Bloco cinza
                     </td>
 
                     <td>
@@ -149,22 +150,22 @@
 
                     <td>
                         <div class="nomeEspaco">
-                            Laboratório de Informática 02
+                            Informática 02
                         </div>
 
-                        <div class="codigoEspaco">
-                            LAB-002
+                        <div class="blocoEspaco">
+                            Bloco cinza
                         </div>
                     </td>
 
                     <td>
                         <span class="tipoEspaco">
-                            Laboratório
+                            Informática
                         </span>
                     </td>
 
                     <td>
-                        Bloco A • 1º andar
+                        Bloco cinza
                     </td>
 
                     <td>
@@ -191,74 +192,74 @@
 
                     <td>
                         <div class="nomeEspaco">
-                            Sala 10
+                            Laboratório
                         </div>
 
-                        <div class="codigoEspaco">
-                            SAL-010
-                        </div>
-                    </td>
-
-                    <td>
-                        <span class="tipoEspaco">
-                            Sala
-                        </span>
-                    </td>
-
-                    <td>
-                        Bloco B • 2º andar
-                    </td>
-
-                    <td>
-                        40 pessoas
-                    </td>
-
-                    <td>
-                        <span class="statusEspaco">
-                            <span class="bolinhaStatus"></span>
-                            Disponível
-                        </span>
-                    </td>
-
-                    <td>
-                        <div class="acoesEspaco">
-                            <button>Ver detalhes</button>
-                        </div>
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-                        <div class="nomeEspaco">
-                            Sala 12
-                        </div>
-
-                        <div class="codigoEspaco">
-                            SAL-012
+                        <div class="blocoEspaco">
+                            Bloco cinza
                         </div>
                     </td>
 
                     <td>
                         <span class="tipoEspaco">
-                            Sala
+                            Laboratório
                         </span>
                     </td>
 
                     <td>
-                        Bloco B • 2º andar
+                        Bloco cinza
                     </td>
 
                     <td>
-                        35 pessoas
+                        30 pessoas
                     </td>
 
                     <td>
                         <span class="statusEspaco manutencao">
                             <span class="bolinhaStatus"></span>
                             Em manutenção
+                        </span>
+                    </td>
+
+                    <td>
+                        <div class="acoesEspaco">
+                            <button>Ver detalhes</button>
+                        </div>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <div class="nomeEspaco">
+                            Auditório
+                        </div>
+
+                        <div class="blocoEspaco">
+                            Bloco cinza
+                        </div>
+                    </td>
+
+                    <td>
+                        <span class="tipoEspaco">
+                            Auditório
+                        </span>
+                    </td>
+
+                    <td>
+                        Bloco cinza
+                    </td>
+
+                    <td>
+                        100 pessoas
+                    </td>
+
+                    <td>
+                        <span class="statusEspaco">
+                            <span class="bolinhaStatus"></span>
+                            Disponível
                         </span>
                     </td>
 

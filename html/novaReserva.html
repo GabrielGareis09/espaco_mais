@@ -17,10 +17,10 @@
         </div>
 
         <div class="links">
-            <a class="ativo">Dashboard</a>
-            <a>Reservas</a>
-            <a>Espaços</a>
-            <a>Calendário</a>
+            <a href="../html/dashboard.html" class="desativado">Dashboard</a>
+            <a href="../html/minhasReservas.html" class="desativado" >Reservas</a>
+            <a href="../html/espacos.html" class="desativado">Espaços</a>
+            <a href="../html/calendario.html" class="desativado">Calendário</a>
         </div>
 
         <div class="perfil">
@@ -46,27 +46,27 @@
                 </div>
                 <div class="areaCardsEspacos">
                     <div class="cardEspacoAtivado">
-                        <h1>Laboratório de Informática 01</h1>
-                        <h2>35 lugares • Bloco A</h2>
-                        <h3>● Disponível</h3>
+                        <h1>Informática 01</h1>
+                        <h2>30 lugares • Bloco Cinza</h2>
+                        <h3 class="disponivel">● Disponível</h3>
                     </div>
 
                     <div class="cardEspaco">
-                        <h1>Laboratório de Informática 01</h1>
-                        <h2>35 lugares • Bloco A</h2>
-                        <h3>● Disponível</h3>
+                        <h1>Informática 02</h1>
+                        <h2>30 lugares • Bloco Cinza</h2>
+                        <h3 class="disponivel">● Disponível</h3>
+                    </div>
+
+                    <div class="cardEspacoManutenção">
+                        <h1>Laboratório</h1>
+                        <h2>30 lugares • Bloco Cinza</h2>
+                        <h3 class="manutençao">● Manutenção</h3>
                     </div>
 
                     <div class="cardEspaco">
-                        <h1>Laboratório de Informática 01</h1>
-                        <h2>35 lugares • Bloco A</h2>
-                        <h3>● Disponível</h3>
-                    </div>
-
-                    <div class="cardEspaco">
-                        <h1>Laboratório de Informática 01</h1>
-                        <h2>35 lugares • Bloco A</h2>
-                        <h3>● Disponível</h3>
+                        <h1>Auditório</h1>
+                        <h2>100 lugares • Bloco Cinza</h2>
+                        <h3 class="disponivel">● Disponível</h3>
                     </div>
                 </div>
             </div>
@@ -93,32 +93,32 @@
                 </div>
                 <div class="areaCardsHorariosDisponiveis">
                     <div class="cardHorariosDisponiveis">
-                        <h1>08:00 — 09:00</h1>
+                        <h1>07:20 — 08:10</h1>
                         <h2>Disponível</h2>
                     </div>
 
                     <div class="cardHorariosOcupados">
-                        <h1>08:00 — 09:00</h1>
+                        <h1>08:10 — 09:00</h1>
+                        <h2>Disponível</h2>
+                    </div>
+
+                    <div class="cardHorariosDisponiveis">
+                        <h1>09:00 — 09:50</h1>
                         <h2>Ocupado</h2>
                     </div>
 
                     <div class="cardHorariosDisponiveis">
-                        <h1>08:00 — 09:00</h1>
-                        <h2>Disponível</h2>
-                    </div>
-
-                    <div class="cardHorariosDisponiveis">
-                        <h1>08:00 — 09:00</h1>
-                        <h2>Disponível</h2>
+                        <h1>09:50 — 10:40</h1>
+                        <h2>Ocupado</h2>
                     </div>
 
                     <div class="cardHorariosOcupados">
-                        <h1>08:00 — 09:00</h1>
-                        <h2>Ocupado</h2>
+                        <h1>10:50 — 11:40</h1>
+                        <h2>Disponível</h2>
                     </div>
 
                     <div class="cardHorariosDisponiveis">
-                        <h1>08:00 — 09:00</h1>
+                        <h1>11:40 — 12:30</h1>
                         <h2>Disponível</h2>
                     </div>
                 </div>
@@ -134,11 +134,23 @@
                 <div class="selectTurma">
                     <h1>Turma</h1>
                     <select>
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Green</option>
-                        <option>Yellow</option>
-                        <option>Purple</option>
+                        <option>1º A</option>
+                        <option>1º B</option>
+                        <option>1º C</option>
+                        <option>1º D</option>
+                        <option>1º E</option>
+
+                        <option>2º A</option>
+                        <option>2º B</option>
+                        <option>2º C</option>
+                        <option>2º D</option>
+                        <option>2º E</option>
+
+                        <option>3º A</option>
+                        <option>3º B</option>
+                        <option>3º C</option>
+                        <option>3º D</option>
+                        <option>3º E</option>
                     </select>
                 </div>
             </div>
@@ -152,7 +164,7 @@
                 </div>
                 <div class="textareaFinalidade">
                     <h1>Finalidade da reserva</h1>
-                    <textarea></textarea>
+                    <textarea placeholder="Ex. Mapeamento site CNN"></textarea>
                 </div>
             </div>
 
@@ -163,7 +175,7 @@
                 <div class="infosResumo">
                     <div class="info">
                         <h1>Espaço</h1>
-                        <h2>Laboratório de Informática 01</h2>
+                        <h2>Informática 01</h2>
                     </div>
 
                     <div class="info">
@@ -173,7 +185,7 @@
 
                     <div class="info">
                         <h1>Horário</h1>
-                        <h2>08:00 — 09:00</h2>
+                        <h2>08:10 — 09:00</h2>
                     </div>
 
                     <div class="info">
