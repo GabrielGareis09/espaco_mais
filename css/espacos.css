@@ -412,3 +412,296 @@ dialog::backdrop {
 .fecharPopUp button:hover {
     transform: translateY(-3px);
 }
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .boasVindas,
+    .cardsPrincipais,
+    .areaCardsBaixo,
+    .filtrosEspacos,
+    .cardEspacos {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .miniCard {
+        width: 30%;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .perfil .cargoPerfil {
+        display: none;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+    .boasVindas {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .cardsPrincipais {
+        margin-left: 25px;
+        margin-right: 25px;
+        gap: 15px;
+    }
+
+    .miniCard {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .areaCardsBaixo {
+        margin-left: 25px;
+        margin-right: 25px;
+        gap: 15px;
+    }
+
+    .cardEsquerda,
+    .cardDireita {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .filtrosEspacos,
+    .cardEspacos {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .filtrosEspacos input {
+        width: 40%;
+    }
+
+    .filtrosEspacos select {
+        width: 25%;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 10px 20px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .links {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .perfil {
+        gap: 6px;
+    }
+
+    .fotoPerfil {
+        width: 38px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .nomePerfil {
+        display: none;
+    }
+
+    .boasVindas {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 25px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 14px;
+    }
+
+    .boasVindas button {
+        width: 100%;
+    }
+
+    .cardsPrincipais {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .miniCard {
+        width: 100%;
+    }
+
+    .areaCardsBaixo {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .cardEsquerda,
+    .cardDireita {
+        width: 100%;
+    }
+
+    .filtrosEspacos {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .filtrosEspacos input,
+    .filtrosEspacos select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cardEspacos {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tabelaEspacos {
+        overflow-x: auto;
+    }
+
+    .tabelaEspacos table {
+        min-width: 700px;
+    }
+
+    dialog {
+        width: 75%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .links {
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .links a {
+        white-space: nowrap;
+    }
+
+    .fotoPerfil {
+        width: 35px;
+        height: 35px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+    .boasVindas {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 22px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 13px;
+    }
+
+    .cardsPrincipais {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 25px;
+    }
+
+    .miniCard {
+        padding: 16px 20px;
+    }
+
+    .miniCard h2 {
+        font-size: 23px;
+    }
+
+    .areaCardsBaixo {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .cardEsquerda,
+    .cardDireita {
+        padding-top: 20px;
+    }
+
+    .headerCardEsquerda,
+    .headerCardDireita {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .cardCardEsquerda {
+        margin-left: 18px;
+        margin-right: 18px;
+        padding-left: 15px;
+    }
+
+    .areaCardsDireita {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .filtrosEspacos,
+    .cardEspacos {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .titCardEspacos {
+        padding: 17px;
+    }
+
+    dialog {
+        width: 85%;
+    }
+
+    .infoDialog {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

@@ -1,5 +1,5 @@
 body {
-    margin: 0%;
+    margin: 0;
     background-color: #F5F7FB;
     font-family: 'Inter', sans-serif;
 }
@@ -10,8 +10,7 @@ body {
     justify-content: space-between;
     background-color: #FFFFFF;
     height: 70px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0 6%;
 }
 
 .logo {
@@ -64,7 +63,7 @@ body {
 }
 
 .fotoPerfil {
-    background-color: #eaf1ff;
+    background-color: #EAF1FF;
     color: #1D4ED8;
     width: 45px;
     height: 45px;
@@ -77,23 +76,32 @@ body {
 
 .nomePerfil {
     font-size: 15px;
-    margin: 0%;
+    margin: 0;
 }
 
 .cargoPerfil {
     font-size: 12px;
-    margin: 0%;
+    margin: 0;
     color: #667085;
     font-weight: 300;
 }
 
 main {
     margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+.boasVindas,
+.filtrosCalendario,
+.calendario {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .boasVindas {
-    padding-left: 350px;
-    padding-right: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,12 +114,12 @@ main {
 }
 
 .txtBoasVindas h1 {
-    margin: 0%;
+    margin: 0;
     font-size: 30px;
 }
 
 .txtBoasVindas h2 {
-    margin: 0%;
+    margin: 0;
     color: #667085;
     font-size: 16px;
     font-weight: 300;
@@ -139,16 +147,14 @@ main {
     background-color: #FFFFFF;
     border: 1px solid #E8EBF0;
     border-radius: 12px;
-    margin-left: 350px;
-    margin-right: 350px;
     align-items: center;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .filtrosCalendario h1 {
-    margin: 0%;
+    margin: 0;
     font-size: 12px;
     font-weight: 300;
     color: #667085;
@@ -156,18 +162,17 @@ main {
 
 .filtrosCalendario select {
     border-radius: 10px;
-    border: 1px solid #c7c7c7;
-    padding: 10px 10px;
-    width: 15%;
+    border: 1px solid #C7C7C7;
+    padding: 10px;
+    width: 180px;
+    max-width: 100%;
 }
 
 .calendario {
     background-color: #FFFFFF;
     border: 1px solid #E8EBF0;
     border-radius: 12px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .topoCalendario {
@@ -184,12 +189,12 @@ main {
 }
 
 .mesAno h1 {
-    margin: 0%;
+    margin: 0;
     font-size: 18px;
 }
 
 .mesAno h2 {
-    margin: 0%;
+    margin: 0;
     font-size: 12px;
     color: #667085;
     font-weight: 300;
@@ -202,7 +207,7 @@ main {
 
 .setasMes button {
     background-color: #FFFFFF;
-    border: 1px solid #d1d3d6;
+    border: 1px solid #D1D3D6;
     padding: 8px 12px;
     border-radius: 10px;
     font-size: 12px;
@@ -242,6 +247,7 @@ main {
     border-bottom: 1px solid #EEF0F4;
     position: relative;
     background-color: #FFFFFF;
+    box-sizing: border-box;
 }
 
 .numeroDia {
@@ -282,6 +288,7 @@ main {
     font-weight: 500;
     line-height: 1.4;
     overflow: hidden;
+    word-break: break-word;
 }
 
 .reservaCalendario span {
@@ -289,4 +296,199 @@ main {
     font-size: 8px;
     font-weight: 700;
     margin-bottom: 2px;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .links {
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .infoPerfil {
+        display: none;
+    }
+
+    .boasVindas,
+    .filtrosCalendario,
+    .calendario {
+        width: calc(100% - 40px);
+    }
+
+    .diaCalendario {
+        min-height: 85px;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        margin-top: 35px;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 12px 20px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .links {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .perfil {
+        display: none;
+    }
+
+    .boasVindas {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 25px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .boasVindas button {
+        padding: 11px 14px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .filtrosCalendario {
+        padding: 12px 15px;
+    }
+
+    .filtrosCalendario select {
+        width: 100%;
+    }
+
+    .topoCalendario {
+        padding: 15px;
+    }
+
+    .mesAno {
+        gap: 7px;
+    }
+
+    .mesAno h1 {
+        font-size: 16px;
+    }
+
+    .mesAno h2 {
+        font-size: 11px;
+    }
+
+    .setasMes {
+        gap: 6px;
+    }
+
+    .setasMes button {
+        padding: 7px 10px;
+    }
+
+    .diaCalendario {
+        min-height: 75px;
+        padding: 7px;
+    }
+
+    .numeroDia {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .diaCalendario.hoje .numeroDia {
+        width: 22px;
+        height: 22px;
+    }
+
+    .reservaCalendario {
+        padding: 4px;
+        font-size: 7px;
+        line-height: 1.3;
+    }
+
+    .reservaCalendario span {
+        font-size: 7px;
+    }
+
+    .diasSemana div {
+        padding: 10px 0;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .links {
+        gap: 8px;
+        font-size: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .boasVindas,
+    .filtrosCalendario {
+        width: calc(100% - 30px);
+    }
+
+    .boasVindas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .boasVindas button {
+        width: 100%;
+    }
+
+    .filtrosCalendario {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .calendario {
+        width: calc(100% - 30px);
+    }
+
+    .topoCalendario {
+        padding: 12px;
+    }
+
+    .diaCalendario {
+        min-height: 68px;
+        padding: 5px;
+    }
+
+    .reservaCalendario {
+        border-left-width: 2px;
+        padding: 3px;
+        font-size: 6px;
+    }
+
+    .reservaCalendario span {
+        font-size: 6px;
+    }
+
+    .diasSemana div {
+        font-size: 7px;
+        padding: 8px 0;
+    }
 }

@@ -585,3 +585,347 @@ hr {
 .cardPopupConfirmacao button:hover {
     transform: translateY(-3px);
 }
+
+
+@media (max-width: 1200px) {
+
+
+    .navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .titNovaReserva {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .cardNovaReserva {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
+    .cardEspaco,
+    .cardEspacoAtivado,
+    .cardEspacoManutenção {
+        width: 47%;
+    }
+
+    .cardHorariosDisponiveis,
+    .cardHorariosOcupados {
+        width: 20%;
+        padding: 20px 30px;
+    }
+
+    .inputData input {
+        width: 35%;
+    }
+
+    .selectTurma select {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .links {
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+    .titNovaReserva {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    .cardNovaReserva {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 25px;
+    }
+
+    .areaCardsEspacos {
+        gap: 10px;
+    }
+
+    .cardEspaco,
+    .cardEspacoAtivado,
+    .cardEspacoManutenção {
+        width: 46%;
+    }
+
+    .inputData input {
+        width: 45%;
+        box-sizing: border-box;
+    }
+
+    .areaCardsHorariosDisponiveis {
+        gap: 10px;
+    }
+
+    .cardHorariosDisponiveis,
+    .cardHorariosOcupados {
+        width: 25%;
+        padding: 18px 20px;
+    }
+
+    .selectTurma select {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .textareaFinalidade textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .infosResumo {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+
+    .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+
+
+    .perfil {
+        margin-left: auto;
+    }
+
+
+    .nomePerfil,
+    .cargoPerfil {
+        display: none;
+    }
+
+
+    .fotoPerfil {
+        width: 40px;
+        height: 40px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+
+    .titNovaReserva {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .titNovaReserva h1 {
+        font-size: 25px;
+    }
+
+
+    .titNovaReserva h2 {
+        font-size: 14px;
+    }
+
+    .cardNovaReserva {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 25px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .titEscolherEspaco h1,
+    .titEscolherData h1,
+    .titHorariosDisponiveis h1,
+    .titEscolherTurma h1,
+    .Finalidade h1 {
+        font-size: 16px;
+    }
+
+
+    .areaCardsEspacos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .cardEspaco,
+    .cardEspacoAtivado,
+    .cardEspacoManutenção {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .inputData input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .areaCardsHorariosDisponiveis {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+    .cardHorariosDisponiveis,
+    .cardHorariosOcupados {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 10px;
+    }
+
+
+    .cardHorariosDisponiveis h1,
+    .cardHorariosOcupados h1 {
+        font-size: 12px;
+    }
+
+    .selectTurma select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .textareaFinalidade textarea {
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    .cardResumoConversa {
+        padding: 15px;
+    }
+
+
+    .infosResumo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    .info {
+        gap: 5px;
+    }
+
+    .btnFinais {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+
+    .btnCanclear,
+    .btnConfirmar {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #popupConfirmacao {
+        width: calc(100% - 40px);
+        max-width: 350px;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .links {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+
+    .titNovaReserva {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .cardNovaReserva {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 15px;
+    }
+
+
+    .titNovaReserva h1 {
+        font-size: 23px;
+    }
+
+
+    .areaCardsHorariosDisponiveis {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+
+    .cardHorariosDisponiveis,
+    .cardHorariosOcupados {
+        padding: 15px 5px;
+    }
+
+
+    .infosResumo {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+
+    .info h1 {
+        font-size: 10px;
+    }
+
+
+    .info h2 {
+        font-size: 11px;
+    }
+
+}

@@ -2,8 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0%;
     justify-content: center;
+    margin: 0%;
     min-height: 90vh;
     background-color: #F5F7FB;
     font-family: 'Inter', sans-serif;
@@ -16,9 +16,9 @@ body {
 }
 
 .titLogin h1 {
+    margin: 0%;
     font-weight: 800;
     font-size: 70px;
-    margin: 0%;
 }
 
 .mais {
@@ -40,20 +40,56 @@ body {
 
 .cardLogin h1 {
     margin: 0%;
-    font-weight: 200;
     margin-bottom: 30px;
+    font-weight: 200;
     font-size: 25px;
 }
 
 .cardLogin input {
+    width: 80%;
+    box-sizing: border-box;
     border-radius: 50px;
     border: 1px solid #c7c7c7;
-    padding: 10px 10px;
-    width: 80%;
+    padding: 12px 15px;
     font-size: 15px;
     font-weight: 500;
-    padding: 12px 15px;
     margin-bottom: 15px;
+}
+
+.campoSenha {
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campoSenha input {
+    width: 100%;
+    margin: 0%;
+    padding-right: 45px;
+}
+
+.olhoSenha {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: auto !important;
+    margin: 0% !important;
+    padding: 5px !important;
+    background: transparent !important;
+    border: none !important;
+    color: #667085 !important;
+    font-size: 17px !important;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%) !important;
+}
+
+.olhoSenha:hover {
+    background: transparent !important;
+    color: #2563EB !important;
+    transform: translateY(-50%) !important;
 }
 
 .cardLogin button {
@@ -61,7 +97,6 @@ body {
     color: #FFFFFF;
     border-radius: 50px;
     border: 1px solid #c7c7c7;
-    padding: 10px 10px;
     width: 88%;
     font-size: 15px;
     font-weight: 500;
@@ -85,59 +120,55 @@ body {
     text-align: center;
 }
 
-
 .mensagemErro {
     color: #DC2626;
 }
-
 
 .mensagemSucesso {
     color: #15803D;
 }
 
-
 .inputErro {
     border: 1px solid #DC2626 !important;
 }
-
 
 .inputSucesso {
     border: 1px solid #16A34A !important;
 }
 
-.campoSenha {
-    position: relative;
-    width: 88%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+
+@media (max-width: 900px) {
+
+    .cardLogin {
+        width: 400px;
+    }
+
 }
 
-.campoSenha input {
-    width: 100%;
-    margin: 0%;
-    padding-right: 45px;
-    box-sizing: border-box;
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    .titLogin h1 {
+        font-size: 60px;
+    }
+
+    .cardLogin {
+        width: calc(100% - 40px);
+    }
+
 }
 
-.olhoSenha {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%) !important;
-    width: auto !important;
-    margin: 0% !important;
-    padding: 5px !important;
-    background: transparent !important;
-    border: none !important;
-    color: #667085 !important;
-    font-size: 17px !important;
-    line-height: 1;
-    cursor: pointer;
-}
+@media (max-width: 400px) {
 
-.olhoSenha:hover {
-    background: transparent !important;
-    color: #2563EB !important;
-    transform: translateY(-50%) !important;
+    .titLogin h1 {
+        font-size: 50px;
+    }
+
+    .cardLogin {
+        width: calc(100% - 30px);
+    }
+
 }

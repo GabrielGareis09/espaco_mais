@@ -485,3 +485,254 @@ dialog::backdrop {
 #confirmarCancelar:hover {
     background-color: #B91C1C;
 }
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .boasVindas {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .cardsPrincipais {
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 15px;
+    }
+
+    .miniCard {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .areaCardsBaixo {
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 15px;
+    }
+
+    .cardEsquerda {
+        width: 55%;
+    }
+
+    .cardDireita {
+        width: 45%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    main {
+        margin-top: 40px;
+    }
+
+    .navbar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .links {
+        gap: 18px;
+        font-size: 13px;
+    }
+
+    .boasVindas {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 26px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 14px;
+    }
+
+    .cardsPrincipais {
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 10px;
+    }
+
+    .miniCard {
+        padding-left: 20px;
+    }
+
+    .areaCardsBaixo {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cardEsquerda {
+        width: 54%;
+    }
+
+    .cardDireita {
+        width: 44%;
+    }
+
+    dialog {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .perfil {
+        margin-left: auto;
+    }
+
+    .nomePerfil {
+        font-size: 13px;
+    }
+
+    .cargoPerfil {
+        font-size: 10px;
+    }
+
+    .fotoPerfil {
+        width: 40px;
+        height: 40px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+    .boasVindas {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 23px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 13px;
+    }
+
+    .boasVindas button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .cardsPrincipais {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .miniCard {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 20px;
+    }
+
+    .miniCard h1 {
+        font-size: 13px;
+    }
+
+    .miniCard h2 {
+        font-size: 22px;
+    }
+
+    .miniCard h3 {
+        font-size: 11px;
+    }
+
+    .areaCardsBaixo {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cardEsquerda,
+    .cardDireita {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cardEsquerda {
+        height: auto;
+        min-height: 260px;
+        padding-bottom: 20px;
+    }
+
+    .headerCardEsquerda,
+    .headerCardDireita {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cardCardEsquerda {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .especificacoesCard {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .areaCardsDireita {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    dialog {
+        width: calc(100% - 40px);
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+
+    .cardDialog h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .infoDialog {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .fecharPopUp button {
+        width: 100%;
+    }
+}

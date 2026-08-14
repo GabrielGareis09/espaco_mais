@@ -1,5 +1,5 @@
 body {
-    margin: 0%;
+    margin: 0;
     background-color: #F5F7FB;
     font-family: 'Inter', sans-serif;
 }
@@ -10,8 +10,7 @@ body {
     justify-content: space-between;
     background-color: #FFFFFF;
     height: 70px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0 8%;
 }
 
 .logo {
@@ -64,7 +63,7 @@ body {
 }
 
 .fotoPerfil {
-    background-color: #eaf1ff;
+    background-color: #EAF1FF;
     color: #1D4ED8;
     width: 45px;
     height: 45px;
@@ -77,12 +76,12 @@ body {
 
 .nomePerfil {
     font-size: 15px;
-    margin: 0%;
+    margin: 0;
 }
 
 .cargoPerfil {
     font-size: 12px;
-    margin: 0%;
+    margin: 0;
     color: #667085;
     font-weight: 300;
 }
@@ -92,20 +91,19 @@ main {
 }
 
 .boasVindas {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding: 0 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .txtBoasVindas h1 {
-    margin: 0%;
+    margin: 0;
     font-size: 30px;
 }
 
 .txtBoasVindas h2 {
-    margin: 0%;
+    margin: 0;
     color: #667085;
     font-size: 16px;
     font-weight: 300;
@@ -128,10 +126,10 @@ main {
 }
 
 .cardsPrincipais {
-    padding-left: 350px;
-    padding-right: 350px;
-    display: flex;
-    justify-content: space-between;
+    padding: 0 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     margin-top: 35px;
 }
 
@@ -142,44 +140,46 @@ main {
     background-color: #FFFFFF;
     border: 1px solid #E8EBF0;
     border-radius: 12px;
-    padding: 18px 0px 18px 25px;
-    width: 353px;
+    padding: 18px 25px;
+    min-width: 0;
 }
 
 .miniCard h1 {
     font-size: 15px;
     font-weight: 300;
     color: #667085;
-    margin: 0%;
+    margin: 0;
 }
 
 .miniCard h2 {
     font-size: 30px;
     font-weight: 700;
-    margin: 0%;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .miniCard h3 {
     font-size: 12px;
     font-weight: 300;
     color: #667085;
-    margin: 0%;
+    margin: 0;
 }
 
 .areaCardsBaixo {
-    display: flex;
-    padding-left: 350px;
-    padding-right: 350px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 25px;
+    padding: 0 8%;
     margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 .cardEsquerda {
     background-color: #FFFFFF;
     border: 1px solid #E8EBF0;
     border-radius: 12px;
-    width: 55%;
-    height: 280px;
+    min-height: 280px;
     padding-top: 25px;
 }
 
@@ -187,21 +187,20 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
 }
 
 .headerCardEsquerda h1 {
     font-size: 15px;
     font-weight: 800;
-    margin: 0%;
+    margin: 0;
 }
 
 .headerCardEsquerda a {
     font-size: 12px;
     font-weight: 500;
     color: #1D4ED8;
-    margin: 0%;
+    margin: 0;
     cursor: pointer;
     transform: translateY(0);
     transition: transform 0.3s ease;
@@ -215,13 +214,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: #f1f5fc;
-    border: 1px solid #d2e1fd;
+    background-color: #F1F5FC;
+    border: 1px solid #D2E1FD;
     border-radius: 12px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 15px;
-    padding: 20px 0px 20px 20px;
+    margin: 15px 25px 25px;
+    padding: 20px;
     user-select: none;
 }
 
@@ -229,23 +226,24 @@ main {
     color: #2563EB;
     font-size: 13px;
     font-weight: 500;
-    margin: 0%;
+    margin: 0;
 }
 
 .cardCardEsquerda h1 {
     font-size: 18px;
-    margin: 0%;
+    margin: 0;
 }
 
 .especificacoesCard {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .especificacoesCard h3 {
     font-size: 13px;
     font-weight: 300;
-    margin: 0%;
+    margin: 0;
 }
 
 .reservaConfirmada {
@@ -253,9 +251,9 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #ECFDF3;
-    width: 130px;
-    padding: 5px;
-    color: #0a5f2a;
+    width: fit-content;
+    padding: 5px 15px;
+    color: #0A5F2A;
     font-weight: 600;
     font-size: 11px;
     border-radius: 50px;
@@ -265,29 +263,28 @@ main {
     background-color: #FFFFFF;
     border: 1px solid #E8EBF0;
     border-radius: 12px;
-    width: 43.5%;
     padding-top: 25px;
+    min-width: 0;
 }
 
 .headerCardDireita {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
 }
 
 .headerCardDireita h1 {
     font-size: 15px;
     font-weight: 800;
-    margin: 0%;
+    margin: 0;
 }
 
 .headerCardDireita a {
     font-size: 12px;
     font-weight: 500;
     color: #1D4ED8;
-    margin: 0%;
+    margin: 0;
     cursor: pointer;
     transform: translateY(0);
     transition: transform 0.3s ease;
@@ -299,9 +296,7 @@ main {
 }
 
 .areaCardsDireita {
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 15px 25px 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -313,33 +308,35 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     user-select: none;
+    gap: 15px;
 }
 
 .direitaMiniCardDireita h1 {
     font-size: 12px;
-    margin: 0%;
+    margin: 0;
 }
 
 .direitaMiniCardDireita h2 {
     font-size: 12px;
-    margin: 0%;
+    margin: 0;
     color: #667085;
     font-weight: 200;
 }
 
 .esquerdaMiniCardDireita h1 {
     font-size: 12px;
-    margin: 0%;
-    color: #1cac53;
+    margin: 0;
+    color: #1CAC53;
 }
 
 dialog {
-    background-color: #f1f5fc;
-    border: 1px solid #d2e1fd;
+    background-color: #F1F5FC;
+    border: 1px solid #D2E1FD;
     border-radius: 12px;
-    width: 20%;
+    width: min(400px, 80%);
+    padding: 25px;
 }
 
 dialog::backdrop {
@@ -356,24 +353,25 @@ dialog::backdrop {
     font-size: 15px;
     color: #2563EB;
     font-weight: 500;
-    margin: 0%;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .cardDialog h1 {
     font-size: 30px;
-    margin: 0%;
+    margin: 0;
 }
 
 .infoDialog {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .infoDialog h3 {
     font-size: 13px;
     font-weight: 300;
-    margin: 0%;
+    margin: 0;
 }
 
 .fecharPopUp button {
@@ -403,4 +401,163 @@ dialog::backdrop {
 .reservasDialog a {
     color: #1D4ED8;
     font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .boasVindas,
+    .cardsPrincipais,
+    .areaCardsBaixo {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .links {
+        gap: 18px;
+    }
+
+    .miniCard h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 4%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .perfil {
+        margin-left: auto;
+    }
+
+    main {
+        margin-top: 35px;
+    }
+
+    .boasVindas {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cardsPrincipais {
+        grid-template-columns: 1fr;
+    }
+
+    .areaCardsBaixo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .perfil {
+        margin: 0;
+    }
+
+    .infoPerfil {
+        display: none;
+    }
+
+    .links {
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    .boasVindas {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 26px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 14px;
+    }
+
+    .boasVindas button {
+        width: 100%;
+    }
+
+    .cardsPrincipais,
+    .areaCardsBaixo {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .miniCard {
+        padding: 18px 20px;
+    }
+
+    .cardCardEsquerda {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px;
+    }
+
+    .headerCardEsquerda,
+    .headerCardDireita {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .areaCardsDireita {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .miniCardDireita {
+        padding: 12px 15px;
+    }
+
+    dialog {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .links {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .txtBoasVindas h1 {
+        font-size: 23px;
+    }
+
+    .txtBoasVindas h2 {
+        font-size: 13px;
+    }
+
+    .miniCard h2 {
+        font-size: 22px;
+    }
+
+    .especificacoesCard {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
