@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <title>DASHBOARD - ESPAÇO+</title>
 </head>
+
 <body>
     <header class="navbar">
         <div class="logo">
@@ -18,7 +20,7 @@
 
         <div class="links">
             <a href="../html/dashboard.html" class="ativo">Dashboard</a>
-            <a href="../html/minhasReservas.html" class="desativado" >Reservas</a>
+            <a href="../html/minhasReservas.html" class="desativado">Reservas</a>
             <a href="../html/espacos.html" class="desativado">Espaços</a>
             <a href="../html/calendario.html" class="desativado">Calendário</a>
         </div>
@@ -26,7 +28,7 @@
         <div class="perfil">
             <div class="fotoPerfil">GG</div>
             <div class="infoPerfil">
-                <h1 class="nomePerfil">Gabriel Gareis</h1>
+                <h1 class="nomePerfil" id="nomePerfil"></h1>
                 <h1 class="cargoPerfil">Professor</h1>
             </div>
         </div>
@@ -35,7 +37,7 @@
     <main>
         <div class="boasVindas">
             <div class="txtBoasVindas">
-                <h1>Olá, Gabriel 👋</h1>
+                <h1 id="nomeBoasVindas">Olá, 👋</h1>
                 <h2>Gerencie suas reservas e encontros disponíveis.</h2>
             </div>
             <div>
@@ -67,7 +69,7 @@
             <div class="cardEsquerda">
                 <div class="headerCardEsquerda">
                     <h1>Próxima reserva</h1>
-                    <a>Ver detalhes</a>
+                    <a id="btnDetalhes">Ver detalhes</a>
                 </div>
 
                 <div class="cardCardEsquerda">
@@ -75,7 +77,7 @@
                     <h1>Informática 01</h1>
                     <div class="especificacoesCard">
                         <h3>📍 Bloco Cinza</h1>
-                        <h3>👥 3º D</h1>
+                            <h3>👥 3º D</h1>
                     </div>
                     <div class="reservaConfirmada">✓ Reserva confirmada</div>
                 </div>
@@ -121,5 +123,26 @@
             </div>
         </div>
     </main>
+
+    <dialog id="dialog">
+        <div class="cardDialog">
+            <h2>Hoje • 9:50 — 10:40</h2>
+            <h1>Informática 01</h1>
+            <div class="infoDialog">
+                <h3>📍 Bloco Cinza</h1>
+                    <h3>👥 3º D</h1>
+            </div>
+        </div>
+        <div class="fecharPopUp">
+            <button id="fecharPopUp">Fechar</button>
+        </div>
+        <div class="reservasDialog">
+            <a href="../html/minhasReservas.html">Ver minhas reservas</a>
+        </div>
+    </dialog>
+
+    <script src="../js/dashboard.js"></script>
+
 </body>
+
 </html>

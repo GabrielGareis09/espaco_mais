@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/novaReserva.css">
     <title>NOVA RESERVA - ESPAÇO+</title>
 </head>
+
 <body>
     <header class="navbar">
         <div class="logo">
@@ -18,7 +20,7 @@
 
         <div class="links">
             <a href="../html/dashboard.html" class="desativado">Dashboard</a>
-            <a href="../html/minhasReservas.html" class="desativado" >Reservas</a>
+            <a href="../html/minhasReservas.html" class="desativado">Reservas</a>
             <a href="../html/espacos.html" class="desativado">Espaços</a>
             <a href="../html/calendario.html" class="desativado">Calendário</a>
         </div>
@@ -34,8 +36,8 @@
 
     <main>
         <div class="titNovaReserva">
-                <h1>Nova reserva</h1>
-                <h2>Escolha o espaço, horário e informe os dados da reserva.</h2>
+            <h1>Nova reserva</h1>
+            <h2>Escolha o espaço, horário e informe os dados da reserva.</h2>
         </div>
 
         <div class="cardNovaReserva">
@@ -80,7 +82,7 @@
                 </div>
                 <div class="inputData">
                     <h1>Data</h1>
-                    <input type="date">
+                    <input type="date" id="dataReserva">
                 </div>
             </div>
 
@@ -133,7 +135,7 @@
                 </div>
                 <div class="selectTurma">
                     <h1>Turma</h1>
-                    <select>
+                    <select id="turmaReserva">
                         <option>1º A</option>
                         <option>1º B</option>
                         <option>1º C</option>
@@ -164,7 +166,7 @@
                 </div>
                 <div class="textareaFinalidade">
                     <h1>Finalidade da reserva</h1>
-                    <textarea placeholder="Ex. Mapeamento site CNN"></textarea>
+                    <textarea id="finalidadeReserva" placeholder="Ex. Mapeamento site CNN"></textarea>
                 </div>
             </div>
 
@@ -175,22 +177,22 @@
                 <div class="infosResumo">
                     <div class="info">
                         <h1>Espaço</h1>
-                        <h2>Informática 01</h2>
+                        <h2 id="resumoEspaco">Informática 01</h2>
                     </div>
 
                     <div class="info">
                         <h1>Data</h1>
-                        <h2>04/07/2026</h2>
+                        <h2 id="resumoData">--/--/----</h2>
                     </div>
 
                     <div class="info">
                         <h1>Horário</h1>
-                        <h2>08:10 — 09:00</h2>
+                        <h2 id="resumoHorario">Não selecionado</h2>
                     </div>
 
                     <div class="info">
                         <h1>Turma</h1>
-                        <h2>Não selecionada</h2>
+                        <h2 id="resumoTurma">1º A</h2>
                     </div>
                 </div>
             </div>
@@ -203,5 +205,16 @@
 
         </div>
     </main>
+
+    <dialog id="popupConfirmacao">
+        <div class="cardPopupConfirmacao">
+            <h1>Reserva confirmada!</h1>
+            <h2>Sua reserva foi realizada com sucesso.</h2>
+            <button id="fecharConfirmacao">Continuar</button>
+        </div>
+    </dialog>
+
+    <script src="../js/novaReserva.js"></script>
 </body>
+
 </html>

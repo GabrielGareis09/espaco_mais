@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +10,24 @@
     <link rel="stylesheet" href="../css/login.css">
     <title>LOGIN - ESPAÇO+</title>
 </head>
+
 <body>
-    <section>
-        <div class="barraColorida"></div>
-    </section>
-
-    <main>
-        <div class="colunaEsquerda">
-            <img src="../img/login.png" alt="">
+    <div class="titLogin">
+        <h1>Espaço</h1>
+        <h1 class="mais">+</h1>
+    </div>
+    <div class="cardLogin">
+        <h1>Bem-vindo</h1>
+        <input type="text" id="username" placeholder="Username...">
+        <div class="campoSenha">
+            <input type="password" id="password" placeholder="Password...">
+            <button type="button" id="mostrarSenha" class="olhoSenha">👁</button>
         </div>
-
-        <div class="colunaDireita">
-            <h1>Espaço+</h1>
-            <div class="inputSenhaContainer">
-                <input type="password" placeholder="Digite sua senha...">
-            </div>
-            <a href="../html/dashboard.html"><button>Entrar</button></a>
-        </div>
-    </main>
+        <p id="mensagemLogin"></p>
+        <button id="btnEntrar">Entrar</button>
+    </div>
 
     <script src="../js/login.js"></script>
-
 </body>
+
 </html>

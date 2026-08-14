@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/minhasReservas.css">
     <title>MINHAS RESERVAS - ESPAÇO+</title>
 </head>
+
 <body>
     <header class="navbar">
         <div class="logo">
@@ -18,7 +20,7 @@
 
         <div class="links">
             <a href="../html/dashboard.html" class="desativado">Dashboard</a>
-            <a href="../html/minhasReservas.html" class="ativo" >Reservas</a>
+            <a href="../html/minhasReservas.html" class="ativo">Reservas</a>
             <a href="../html/espacos.html" class="desativado">Espaços</a>
             <a href="../html/calendario.html" class="desativado">Calendário</a>
         </div>
@@ -82,175 +84,160 @@
 
             <div class="tabelaHistorico">
 
-    <table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Espaço</th>
+                            <th>Data e horário</th>
+                            <th>Turma</th>
+                            <th>Finalidade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="espacoHistorico">Informática 01</div>
 
-        <thead>
+                                <div class="blocoHistorico">Bloco Cinza</div>
+                            </td>
 
-            <tr>
-                <th>Espaço</th>
-                <th>Data e horário</th>
-                <th>Turma</th>
-                <th>Finalidade</th>
-                <th>Status</th>
-                <th>Ações</th>
-            </tr>
+                            <td>
+                                <div class="dataHistorico">06/08/2026</div>
 
-        </thead>
+                                <div class="horarioHistorico">8:10 — 9:00</div>
+                            </td>
 
-        <tbody>
+                            <td>
+                                <span class="turmaHistorico">3º A</span>
+                            </td>
 
-            <tr>
+                            <td>Modelagem Banco de Dados</td>
 
-                <td>
-                    <div class="espacoHistorico">
-                        Informática 01
-                    </div>
+                            <td>
+                                <span class="statusHistorico">
+                                    <span class="bolinhaStatus"></span>
+                                    Confirmada
+                                </span>
+                            </td>
 
-                    <div class="blocoHistorico">
-                        Bloco Cinza
-                    </div>
-                </td>
+                            <td>
+                                <div class="acoesHistorico">
+                                    <button class="btnDetalhes">Detalhes</button>
+                                    <button class="botaoCancelar">Cancelar</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="espacoHistorico">Auditório</div>
 
-                <td>
-                    <div class="dataHistorico">
-                        06/08/2026
-                    </div>
+                                <div class="blocoHistorico">Bloco Cinza</div>
+                            </td>
 
-                    <div class="horarioHistorico">
-                        8:10 — 9:00
-                    </div>
-                </td>
+                            <td>
+                                <div class="dataHistorico">05/08/2026</div>
 
-                <td>
-                    <span class="turmaHistorico">
-                        3º A
-                    </span>
-                </td>
+                                <div class="horarioHistorico">7:20 — 8:10</div>
+                            </td>
 
-                <td>
-                    Modelagem Banco de Dados
-                </td>
+                            <td>
+                                <span class="turmaHistorico">2º D</span>
+                            </td>
 
-                <td>
-                    <span class="statusHistorico">
-                        <span class="bolinhaStatus"></span>
-                        Confirmada
-                    </span>
-                </td>
+                            <td>
+                                Debate sobre IA
+                            </td>
 
-                <td>
-                    <div class="acoesHistorico">
-                        <button>Detalhes</button>
-                        <button class="botaoCancelar">Cancelar</button>
-                    </div>
-                </td>
+                            <td>
+                                <span class="statusHistorico">
+                                    <span class="bolinhaStatus"></span>
+                                    Confirmada
+                                </span>
+                            </td>
 
-            </tr>
+                            <td>
+                                <div class="acoesHistorico">
+                                    <button class="btnDetalhes">Detalhes</button>
+                                    <button class="botaoCancelar">Cancelar</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="espacoHistorico">Informática 02</div>
 
+                                <div class="blocoHistorico">Bloco Cinza</div>
+                            </td>
 
-            <tr>
+                            <td>
+                                <div class="dataHistorico">04/08/2026</div>
 
-                <td>
-                    <div class="espacoHistorico">
-                        Auditório
-                    </div>
+                                <div class="horarioHistorico">11:40 — 12:30</div>
+                            </td>
 
-                    <div class="blocoHistorico">
-                        Bloco Cinza
-                    </div>
-                </td>
+                            <td>
+                                <span class="turmaHistorico">2º C</span>
+                            </td>
 
-                <td>
-                    <div class="dataHistorico">
-                        05/08/2026
-                    </div>
+                            <td>Mapeamento CNN</td>
 
-                    <div class="horarioHistorico">
-                        7:20 — 8:10
-                    </div>
-                </td>
+                            <td>
+                                <span class="statusHistorico">
+                                    <span class="bolinhaStatus"></span>
+                                    Confirmada
+                                </span>
+                            </td>
 
-                <td>
-                    <span class="turmaHistorico">
-                        2º D
-                    </span>
-                </td>
-
-                <td>
-                    Debate sobre IA
-                </td>
-
-                <td>
-                    <span class="statusHistorico">
-                        <span class="bolinhaStatus"></span>
-                        Confirmada
-                    </span>
-                </td>
-
-                <td>
-                    <div class="acoesHistorico">
-                        <button>Detalhes</button>
-                        <button class="botaoCancelar">Cancelar</button>
-                    </div>
-                </td>
-
-            </tr>
-
-
-            <tr>
-
-                <td>
-                    <div class="espacoHistorico">
-                        Informática 02
-                    </div>
-
-                    <div class="blocoHistorico">
-                        Bloco Cinza
-                    </div>
-                </td>
-
-                <td>
-                    <div class="dataHistorico">
-                        04/08/2026
-                    </div>
-
-                    <div class="horarioHistorico">
-                        11:40 — 12:30
-                    </div>
-                </td>
-
-                <td>
-                    <span class="turmaHistorico">
-                        2º C
-                    </span>
-                </td>
-
-                <td>
-                    Mapeamento CNN
-                </td>
-
-                <td>
-                    <span class="statusHistorico">
-                        <span class="bolinhaStatus"></span>
-                        Confirmada
-                    </span>
-                </td>
-
-                <td>
-                    <div class="acoesHistorico">
-                        <button>Detalhes</button>
-                        <button class="botaoCancelar">Cancelar</button>
-                    </div>
-                </td>
-
-            </tr>
-
-        </tbody>
-
-    </table>
-
-</div>
+                            <td>
+                                <div class="acoesHistorico">
+                                    <button class="btnDetalhes">Detalhes</button>
+                                    <button class="botaoCancelar">Cancelar</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
+
+    <dialog id="dialog">
+        <div class="cardDialog">
+            <h2 id="dataDialog">06/08/2026 • 8:10 — 9:00</h2>
+            <h1 id="espacoDialog">Informática 01</h1>
+            <div class="infoDialog">
+                <h3 id="blocoDialog">📍 Bloco Cinza</h3>
+                <h3 id="turmaDialog">👥 3º A</h3>
+            </div>
+            <div class="finalidadeDialog">
+                <h3 id="finalidadeDialog">Modelagem Banco de Dados</h3>
+            </div>
+        </div>
+        <div class="fecharPopUp">
+            <button id="fecharPopUp">Fechar</button>
+        </div>
+    </dialog>
+
+
+    <dialog id="dialogCancelar">
+        <div class="cardDialog">
+            <h2>Cancelar reserva</h2>
+            <h1>Tem certeza?</h1>
+            <p id="reservaCancelar">
+                Deseja cancelar esta reserva?
+            </p>
+        </div>
+        <div class="botoesCancelar">
+            <button id="voltarCancelar">Voltar</button>
+            <button id="confirmarCancelar">Sim, cancelar</button>
+        </div>
+    </dialog>
+
+
+
+    <script src="../js/minhasReservas.js"></script>
 </body>
+
 </html>
