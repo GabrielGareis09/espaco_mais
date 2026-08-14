@@ -250,9 +250,6 @@ main {
     vertical-align: middle;
 }
 
-
-/* ESPAÇO */
-
 .espacoHistorico {
     color: #172033;
     font-size: 12px;
@@ -264,9 +261,6 @@ main {
     font-size: 10px;
     margin-top: 4px;
 }
-
-
-/* DATA E HORÁRIO */
 
 .dataHistorico {
     color: #344054;
@@ -280,9 +274,6 @@ main {
     margin-top: 4px;
 }
 
-
-/* TURMA */
-
 .turmaHistorico {
     display: inline-block;
     background-color: #F2F4F7;
@@ -292,9 +283,6 @@ main {
     padding: 5px 8px;
     border-radius: 5px;
 }
-
-
-/* STATUS */
 
 .statusHistorico {
     display: inline-flex;
@@ -314,9 +302,6 @@ main {
     border-radius: 50%;
     background-color: #16A34A;
 }
-
-
-/* AÇÕES */
 
 .acoesHistorico {
     display: flex;
@@ -342,4 +327,161 @@ main {
     border-color: #FCA5A5;
     color: #DC2626;
     background-color: #FFF8F8;
+}
+
+dialog {
+    background-color: #f1f5fc;
+    border: 1px solid #d2e1fd;
+    border-radius: 12px;
+    width: 20%;
+}
+
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+.cardDialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cardDialog h2 {
+    font-size: 15px;
+    color: #2563EB;
+    font-weight: 500;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+
+.cardDialog h1 {
+    font-size: 30px;
+    margin: 0%;
+}
+
+
+.infoDialog {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+
+.infoDialog h3 {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0%;
+}
+
+
+.finalidadeDialog {
+    margin-top: 15px;
+}
+
+
+.finalidadeDialog h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #667085;
+    margin: 0%;
+}
+
+
+.fecharPopUp button {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 12px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.fecharPopUp button:hover {
+    transform: translateY(-3px);
+}
+
+dialog {
+    background-color: #f1f5fc;
+    border: 1px solid #d2e1fd;
+    border-radius: 12px;
+    width: 20%;
+}
+
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+#dialogCancelar {
+    text-align: center;
+}
+
+
+#dialogCancelar .cardDialog h2 {
+    color: #DC2626;
+}
+
+
+#dialogCancelar .cardDialog h1 {
+    font-size: 24px;
+}
+
+
+#dialogCancelar .cardDialog p {
+    color: #667085;
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+
+
+.botoesCancelar {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+
+.botoesCancelar button {
+    flex: 1;
+    border-radius: 10px;
+    padding: 11px 15px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#voltarCancelar {
+    background-color: #FFFFFF;
+    border: 1px solid #DFE3E9;
+    color: #667085;
+}
+
+
+#voltarCancelar:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+}
+
+
+#confirmarCancelar {
+    background-color: #DC2626;
+    border: 1px solid #DC2626;
+    color: #FFFFFF;
+}
+
+
+#confirmarCancelar:hover {
+    background-color: #B91C1C;
 }

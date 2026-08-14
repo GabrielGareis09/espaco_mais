@@ -214,88 +214,47 @@ main {
     color: #2563EB;
 }
 
-/* ==============================
-   DIAS DA SEMANA
-============================== */
-
 .diasSemana {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-
     border-top: 1px solid #E8EBF0;
     border-bottom: 1px solid #E8EBF0;
-
     background-color: #FAFBFC;
 }
 
 .diasSemana div {
     text-align: center;
-
     padding: 12px 0;
-
     color: #8A94A6;
-
     font-size: 10px;
-
     font-weight: 600;
 }
 
-
-/* ==============================
-   DIAS DO CALENDÁRIO
-============================== */
-
 .diasCalendario {
     display: grid;
-
     grid-template-columns: repeat(7, 1fr);
 }
 
 .diaCalendario {
     min-height: 95px;
-
     padding: 10px;
-
     border-right: 1px solid #EEF0F4;
     border-bottom: 1px solid #EEF0F4;
-
     position: relative;
-
     background-color: #FFFFFF;
 }
 
-
-
-
-/* ==============================
-   NÚMERO DO DIA
-============================== */
-
 .numeroDia {
     display: block;
-
     color: #344054;
-
     font-size: 11px;
-
     font-weight: 600;
-
     margin-bottom: 8px;
 }
-
-
-/* ==============================
-   DIAS VAZIOS
-============================== */
 
 .diaCalendario.vazio {
     background-color: #FAFBFC;
 }
-
-
-/* ==============================
-   DIA ATUAL
-============================== */
 
 .diaCalendario.hoje {
     background-color: #F8FAFF;
@@ -303,54 +262,31 @@ main {
 
 .diaCalendario.hoje .numeroDia {
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     width: 25px;
     height: 25px;
-
     background-color: #2563EB;
-
     color: #FFFFFF;
-
     border-radius: 50%;
-
     margin-bottom: 6px;
 }
 
-
-/* ==============================
-   RESERVA
-============================== */
-
 .reservaCalendario {
     background-color: #EAF1FF;
-
     color: #1D4ED8;
-
     border-left: 3px solid #2563EB;
-
     border-radius: 5px;
-
     padding: 6px;
-
     font-size: 8px;
-
     font-weight: 500;
-
     line-height: 1.4;
-
     overflow: hidden;
 }
 
 .reservaCalendario span {
     display: block;
-
     font-size: 8px;
-
     font-weight: 700;
-
     margin-bottom: 2px;
 }

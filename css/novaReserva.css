@@ -97,7 +97,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
+
 }
 
 .titNovaReserva h1 {
@@ -222,7 +222,7 @@ main {
     border-radius: 10px;
     padding: 12px 0px 12px 12px;
     width: 48%;
-    opacity: 0.4; 
+    opacity: 0.4;
     cursor: not-allowed;
 }
 
@@ -362,7 +362,7 @@ hr {
     align-items: center;
     padding: 20px 80px;
     width: 15%;
-    opacity: 0.4; 
+    opacity: 0.4;
     cursor: not-allowed;
 }
 
@@ -526,5 +526,62 @@ hr {
 }
 
 .btnConfirmar:hover {
+    transform: translateY(-3px);
+}
+
+.horarioSelecionado {
+    background-color: #f1f5fc;
+    border: 1px solid #2563EB;
+}
+
+.horarioSelecionado h1 {
+    color: #2563EB;
+}
+
+#popupConfirmacao {
+    background-color: #FFFFFF;
+    border: 1px solid #d2e1fd;
+    border-radius: 12px;
+    width: 350px;
+    padding: 30px;
+}
+
+#popupConfirmacao::backdrop {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.cardPopupConfirmacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cardPopupConfirmacao h1 {
+    font-size: 22px;
+    margin: 0%;
+    color: #172033;
+}
+
+.cardPopupConfirmacao h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #667085;
+    margin-top: 10px;
+}
+
+.cardPopupConfirmacao button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563EB;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cardPopupConfirmacao button:hover {
     transform: translateY(-3px);
 }

@@ -1,101 +1,143 @@
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #F5F7FB;
+    font-family: 'Inter', sans-serif;
 }
 
-.barraColorida {
-  background: linear-gradient(90deg,rgba(37, 99, 235, 1) 0%, rgba(0, 0, 0, 1) 100%);
-  height: 15px;
+.titLogin {
+    display: flex;
+    user-select: none;
+    margin-bottom: 40px;
 }
 
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
+.titLogin h1 {
+    font-weight: 800;
+    font-size: 70px;
+    margin: 0%;
 }
 
-.colunaEsquerda {
-  margin: 0%;
+.mais {
+    color: #2563EB;
 }
 
-.colunaEsquerda img {
-  width: 75%;
-  margin: 0%;
+.cardLogin {
+    width: min(30%, 450px);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E8EBF0;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.colunaDireita {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0%;
+.cardLogin h1 {
+    margin: 0%;
+    font-weight: 200;
+    margin-bottom: 30px;
+    font-size: 25px;
 }
 
-.colunaDireita h1 {
-  margin: 0%;
-  background-image: linear-gradient(90deg,rgba(37, 99, 235, 1) 0%, rgba(0, 0, 0, 1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Inter', sans-serif;
-  font-size: 80px;
+.cardLogin input {
+    border-radius: 50px;
+    border: 1px solid #c7c7c7;
+    padding: 10px 10px;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 15px;
+    margin-bottom: 15px;
 }
 
-.colunaDireita input {
-  width: 530px;
-  height: 45px;
-  border-radius: 50px;
-  border: 2px solid black;
-  margin-bottom: 10px;
-  margin-top: 35px;
-  font-family: 'Inter', sans-serif;
-  font-size: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
-
+.cardLogin button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #c7c7c7;
+    padding: 10px 10px;
+    width: 88%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
 }
 
-.colunaDireita input::placeholder {
-  color: #a6a6a6;
+.cardLogin button:hover {
+    background-color: #15409c;
+    transform: scale(1.03);
 }
 
-.colunaDireita button {
-  width: 560px;
-  height: 45px;
-  border-radius: 50px;
-  border: none;
-  background-color: #1D4ED8;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-size: 25px;
-  font-weight: bolder;
-  cursor: pointer;
+#mensagemLogin {
+    margin: 0%;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
 }
 
-.inputSenhaContainer {
-  position: relative;
-  width: 560px;
-  display: flex;
-  align-items: center;
+
+.mensagemErro {
+    color: #DC2626;
 }
 
-.inputSenhaContainer input {
-  width: 100%;
-  padding-right: 50px;
-  box-sizing: border-box;
+
+.mensagemSucesso {
+    color: #15803D;
 }
 
-.toggleSenha {
-  position: absolute;
-  right: 18px;
-  top: 58%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.inputErro {
+    border: 1px solid #DC2626 !important;
+}
+
+
+.inputSucesso {
+    border: 1px solid #16A34A !important;
+}
+
+.campoSenha {
+    position: relative;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campoSenha input {
+    width: 100%;
+    margin: 0%;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.olhoSenha {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    width: auto !important;
+    margin: 0% !important;
+    padding: 5px !important;
+    background: transparent !important;
+    border: none !important;
+    color: #667085 !important;
+    font-size: 17px !important;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.olhoSenha:hover {
+    background: transparent !important;
+    color: #2563EB !important;
+    transform: translateY(-50%) !important;
 }
